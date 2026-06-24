@@ -11,7 +11,7 @@ You should comment out all portions of your portfolio that you have not complete
 |:--:|:--:|:--:|:--:|
 | Rishabh K | Leland High School | Mechanical Engineering | Incoming Senior
 
-![Headstone Image](Rishabh K.png)
+![Headstone Image](Rishabh.png)
   
 # Final Milestone
 
