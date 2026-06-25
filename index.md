@@ -89,8 +89,8 @@ Don't forget to place the link of where to buy each component inside the quotati
 
 | **Part** | **Note** | **Price** | **Link** |
 |:--:|:--:|:--:|:--:|
-| Raspberry Pi | What the item is used for | $100 | <a href="https://vilros.com/products/raspberry-pi-4-model-b-1?variant=40809478750302&country=US&currency=USD&utm_medium=product_sync&utm_source=google&utm_content=sag_organic&utm_campaign=sag_organic&tw_source=google&tw_adid=&tw_campaign=19684058556&gad_source=1&gad_campaignid=19684058613&gbraid=0AAAAAD1QJAjwAsqve1Ko5ANov0MGcWGae&gclid=Cj0KCQjwo_PRBhDNARIsAEcVALVtimnA-ogRPoFn_vzm8aNlXaiZiaukn7J2mmA_vaF6hLafW63kg8kaAqe8EALw_wcB"> Link </a> |
-| Item Name | What the item is used for | $Price | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
+| Raspberry Pi | Processing Code | $100 | <a href="https://vilros.com/products/raspberry-pi-4-model-b-1?variant=40809478750302&country=US&currency=USD&utm_medium=product_sync&utm_source=google&utm_content=sag_organic&utm_campaign=sag_organic&tw_source=google&tw_adid=&tw_campaign=19684058556&gad_source=1&gad_campaignid=19684058613&gbraid=0AAAAAD1QJAjwAsqve1Ko5ANov0MGcWGae&gclid=Cj0KCQjwo_PRBhDNARIsAEcVALVtimnA-ogRPoFn_vzm8aNlXaiZiaukn7J2mmA_vaF6hLafW63kg8kaAqe8EALw_wcB"> Link </a> |
+| Keyboard & Mouse | Typing and Navigating Raspberry Pi | $29.99 | <a href="https://www.hp.com/us-en/shop/pdp/hp-330-wireless-mouse-and-keyboard-combination?s_kwcid=AL!20144!3!!!!x!!&gclsrc=aw.ds&jumpid=cs_con_nc_ns&utm_medium=cs&utm_source=ga&utm_campaign=US_CPS-bu_PMAX_Mix_acce_Other_Google-s_OPEX_ENG_CM016876_Bestseller&utm_content=sp&adid=&addisttype=xpla&2V9E6AA%23ABL&cq_src=google_ads&cq_cmp=20464174558&cq_con=&cq_term=&cq_med=pla&cq_plac=&cq_net=x&cq_pos=&cq_plt=gp&gad_source=1&gad_campaignid=19973636866&gbraid=0AAAAAD-ppXgjUI0iAGWkyWuwgGXhqn-XC&gclid=Cj0KCQjwo_PRBhDNARIsAEcVALUROLYIQ-82c4Ky0qN2-OQkG_KX16h_GnRwe3QXH-RXmPPuZtRL9eMaAnH2EALw_wcB"> Link </a> |
 | Item Name | What the item is used for | $Price | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
 
 # Other Resources/Examples
