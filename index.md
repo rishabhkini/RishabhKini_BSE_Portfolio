@@ -16,7 +16,10 @@
 
 # First Milestone
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/OXrb9tGNTTQ?si=KPwbgP2sv-ocmgQK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+Summary
 
+For my first milestone I created a program which takes a picture when it is run which will be used very frequently for this project.
 
 # Starter Project - Retro Arcade Game
 
