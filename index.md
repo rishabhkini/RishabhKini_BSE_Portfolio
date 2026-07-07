@@ -21,6 +21,10 @@ Summary
 
 For my first milestone I created a program which takes a picture when it is run which will be used very frequently for this project.
 
+How it works:
+
+I used a RaspberryPI 4, monitor, mouse, keyboard, micro USB adapter, Arducam OV5647, and micro SD card for my first milestone. My RaspberryPI 4 acts like a microscopic computer by processing code and running it. I edit my Raspberry Pi by using my keyboard, mouse, and monitor by connecting it all together. I flashed a bookworm OS which is a newer version of the OS onto my micro SD card and I put it in my Raspberry PI. I did this by using an SD card adapter to connect to my computer and I flashed my SD card using the RaspberryPI imager. The image below shows the inputs of a Raspberry PI zero.
+
 # Starter Project - Retro Arcade Game
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/yw83-8JkuZA?si=sisLsvt2kWda2Es3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
