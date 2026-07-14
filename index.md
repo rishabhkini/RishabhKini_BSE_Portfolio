@@ -17,6 +17,10 @@ Summary
 
 For my second milestone I added a transparent OLED which can display any information that I code it to show. For this demonstration, it shows the time and date.
 
+How it works:
+
+I connected my transparent OLED to the Raspberry Pi using SPI pins.
+
 
 # First Milestone
 
