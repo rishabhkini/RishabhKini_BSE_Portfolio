@@ -12,6 +12,10 @@
 
 # Second Milestone
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/bQmpPXIwCGo?si=ELyeH1S_04Mizyjg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+Summary
+
+For my second milestone I added a transparent OLED which can display any information that I code it to show. For this demonstration, it shows the time and date.
 
 
 # First Milestone
