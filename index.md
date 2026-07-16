@@ -19,7 +19,7 @@ For my second milestone I added a transparent OLED which can display any informa
 
 How it works:
 
-I connected my transparent OLED to the Raspberry Pi using SPI pins.
+I connected my transparent OLED to the Raspberry Pi using SPI pins. The raspberry pi sends graphics pixel by pixel every second to display a live clock on the Transparent OLED. The camera is also attatched to the raspberry pi and takes a picture whenever I press enter. The code splits into two parallel tracks. One track constantly loops to update the screen text without stopping, while the second track waits for the user to press Enter so it can trigger the camera in the background.
 
 
 # First Milestone
