@@ -51,16 +51,98 @@ My starter project is a mini arcade game. With this, you can play tetris, snake 
 <!--Here's where you'll put your code. The syntax below places it into a block of code. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize it to your project needs.--> 
 
 ```c++
-void setup() {
-  // put your setup code here, to run once:
-  Serial.begin(9600);
-  Serial.println("Hello World!");
-}
+import datetime
+import os
+import subprocess
+import time
+from threading import Thread
+import adafruit_ssd1306
+import board
+import digitalio
+from PIL import Image, ImageDraw, ImageFont
 
-void loop() {
-  // put your main code here, to run repeatedly:
+WIDTH = 128
+HEIGHT = 64
 
-}
+spi = board.SPI()
+oled_dc = digitalio.DigitalInOut(board.D25) 
+oled_rst = digitalio.DigitalInOut(board.D27)
+oled_cs = digitalio.DigitalInOut(board.D8)
+
+display = adafruit_ssd1306.SSD1306_SPI(
+    WIDTH, HEIGHT, spi, oled_dc, oled_rst, oled_cs
+)
+display.fill(0)
+display.show()
+
+canvas = Image.new("1", (WIDTH, HEIGHT))
+draw = ImageDraw.Draw(canvas)
+font = ImageFont.load_default()
+
+hud_status = "READY"
+
+def run_hud_display():
+    global hud_status
+    while True:
+        draw.rectangle((0, 0, WIDTH, HEIGHT), fill=0)
+        now = datetime.datetime.now()
+        time_text = now.strftime("%I:%M:%S %p")
+        date_text = now.strftime("%b %d, %Y")
+        draw.text((2, 2), "GLASSES HUD v1.0", font=font, fill=255)
+        draw.text((2, 20), f"Time: {time_text}", font=font, fill=255)
+        draw.text((2, 38), f"Date: {date_text}", font=font, fill=255)
+        draw.text((2, 54), f"Cam: [{hud_status}]", font=font, fill=255)
+        display.image(canvas)
+        display.show()
+
+        time.sleep(1)
+
+def snap_photo():
+    global hud_status
+    hud_status = "CAPTURING"
+    time.sleep(0.1) 
+    desktop_path = os.path.expanduser("~/Desktop")
+    timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
+    filename = f"{desktop_path}/glasses_photo_{timestamp}.jpg"
+
+    command = [
+        "rpicam-still",
+        "-o",
+        filename,
+        "--immediate",
+        "--nopreview", 
+    ]
+
+    try:
+        subprocess.run(command, check=True)
+        hud_status = "SUCCESS"
+    except Exception:
+        hud_status = "ERROR"
+    time.sleep(2)
+    hud_status = "READY"
+
+if __name__ == "__main__":
+    hud_thread = Thread(target=run_hud_display)
+    hud_thread.daemon = True
+    hud_thread.start()
+
+    print("\n" + "=" * 45)
+    print(" SMART GLASSES EXECUTIVE ENGINE INITIALIZED ")
+    print("=" * 45)
+    print(" -> Screen running live updates...")
+    print(" -> PRESS [ENTER] IN THIS TERMINAL TO SNAP A PHOTO.")
+    print(" -> Press Ctrl+C to terminate.")
+    print("=" * 45 + "\n")
+
+    try:
+        while True:
+            capture_thread = Thread(target=snap_photo)
+            capture_thread.start()
+
+    except KeyboardInterrupt:
+        display.fill(0)
+        display.show()
+        print("\nShutting down smart glasses suite safely.")
 ```
 
 # Bill of Materials
